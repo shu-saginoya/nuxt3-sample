@@ -2,7 +2,7 @@ name: Deploy to Firebase
 on:
   push:
     branches:
-      - "main"
+      - "master"
     paths:
       - "packages/hosho.studio/**"
 jobs:
