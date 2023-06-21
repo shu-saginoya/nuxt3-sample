@@ -1,0 +1,11 @@
+{
+  "functions": {
+    "source": "packages/hosho.studio/.output/server/",
+    "predeploy": ["npm install --prefix $RESORCE_DIR"],
+    "runtime": "nodejs18"
+  },
+  "hosting": {
+    "public": "packages/hosho.studio/.output/public",
+    "rewrites": [{ "source": "**", "function": "server" }]
+  }
+}
