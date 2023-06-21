@@ -22,5 +22,5 @@ jobs:
           service_account: "${{ secrets.SERVICE_ACCOUNT }}"
       - run: npm install -g firebase-tools
       - run: npm ci
-      - run: npm runbuild
+      - run: npm run build
       - run: firebase deploy
