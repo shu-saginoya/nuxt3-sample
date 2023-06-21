@@ -3,4 +3,8 @@
 export default defineNuxtConfig({
   // nitro.presetをfirebaseに指定
   nitro: { preset: "firebase" },
+  postcss: {
+    plugins: { tailwindcss: {} },
+  },
+  css: ["~/assets/css/tailwind.css"],
 });
